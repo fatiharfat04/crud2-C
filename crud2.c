@@ -87,7 +87,7 @@ void deleteTeman(){
     if (index >= 0 && index < jumlahTeman)
     {
         // geser elemen-elemen setelah teman yang dihapus ke kiri
-        for (int i = 0; i < jumlahTeman; i++)
+        for (int i = index; i < jumlahTeman - 1; i++)
         {
             daftarTeman[i] = daftarTeman[i + 1];
         }
